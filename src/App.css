@@ -1,5 +1,6 @@
 #root {
 	width: 100vw;
+	max-width: 1440px;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
@@ -8,11 +9,26 @@
 }
 
 .top-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	height: 100%;
+	width: 100%;
 	background-image: url("./assets/pattern-bg-desktop.png");
 	background-repeat: no-repeat;
 }
 
+.map-section {
+	z-index: -1;
+}
+
+/* Map container */
 .leaflet-container {
 	height: calc(100vh - 280px); /* subtracted bg from top-section */
+}
+
+h1 {
+	font-weight: 500;
+	color: white;
+	text-align: center;
 }

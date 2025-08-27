@@ -1,0 +1,40 @@
+.info-container {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: white;
+	width: 60%;
+	border-radius: 10px;
+	position: absolute;
+	top: 180px;
+}
+
+.info-card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 30px;
+	position: relative;
+}
+
+.info-title {
+	color: hsl(0, 0%, 58%);
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.info-content {
+	margin-top: 0;
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
+.info-card.divider::before {
+	position: absolute;
+	top: 25%;
+	bottom: 25%;
+	left: 0;
+	content: "";
+	width: 1px;
+	height: 50%;
+	border-right: 1px solid hsl(0, 0%, 58%);
+}

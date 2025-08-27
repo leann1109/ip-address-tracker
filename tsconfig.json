@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx"
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/types/**/*.d.ts" // Include your declaration file
+	]
+}
